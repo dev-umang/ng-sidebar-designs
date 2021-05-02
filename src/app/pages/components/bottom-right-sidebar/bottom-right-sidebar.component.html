@@ -1,0 +1,22 @@
+<div
+  class="backdrop"
+  (click)="sidebarService.toggleSidebar('bottom-right')"
+  *ngIf="sidebarService.isBottomRight"
+  [@AnimFading]
+></div>
+<div
+  class="sidebar bottom-right-sidebar"
+  *ngIf="sidebarService.isBottomRight"
+  [@AnimBottomRight]
+>
+  <app-single-menu direction="right"></app-single-menu>
+  <div class="closee mt-auto">
+    <button (click)="sidebarService.toggleSidebar('bottom-right')">
+      <i class="fa fa-times"></i>
+    </button>
+  </div>
+  <div class="sidebar-title border-top pt-3">
+    <span><i class="fa fa-circle" style="color: #175dc7"></i></span>
+    <span>Bottom Right Sidebar</span>
+  </div>
+</div>

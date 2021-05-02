@@ -1,0 +1,26 @@
+.bottom-left-sidebar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 65vh;
+    width: 35vw;
+    border-top-right-radius: 100%;
+    overflow: hidden;
+    justify-content: flex-end;
+}
+
+.closee {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.closee button {
+    border: none;
+    background: transparent;
+    padding: 5px 10px;
+}
+
+.closee button:hover {
+    background: rgb(250, 173, 173);
+}

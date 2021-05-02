@@ -1,0 +1,18 @@
+<div class="menu-container">
+    <div *ngFor="let menu of sidebarService.largeMenu">
+        <div class="menu">
+            <div class="border-botom">
+                <h4>{{menu.title}}</h4>
+            </div>
+            <div class="submenu">
+                <div class="submenu-item" *ngFor="let submenu of menu.subMenu">
+                    <div>
+                        <i class={{submenu.icon}}></i>
+                    </div>
+                    <div>{{submenu.title}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

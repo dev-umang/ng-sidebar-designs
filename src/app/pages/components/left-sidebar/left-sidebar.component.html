@@ -1,0 +1,14 @@
+<div class="backdrop" (click)="sidebarService.toggleSidebar('left')" *ngIf="sidebarService.isLeft" [@AnimFading]></div>
+<div class="sidebar left-sidebar" *ngIf="sidebarService.isLeft" [@AnimLeft]>
+    <div class="close-btn">
+        <button (click)="sidebarService.toggleSidebar('left')"><i class="fa fa-times"></i></button>
+    </div>
+    <div class="sidebar-title border-bottom pb-3">
+        <span><i class="fa fa-circle" style="color: #175dc7;"></i></span>
+        <span>Left Sidebar</span>
+    </div>
+    <app-single-menu></app-single-menu>
+    <div class="sidebar-footer border-top">
+        <span>v0.0.1</span>
+    </div>
+</div>

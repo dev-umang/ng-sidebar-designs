@@ -1,0 +1,32 @@
+.menu-container {
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu {
+    padding: 10px 20px;
+    margin: 5px 0px;
+    display: flex;
+    transition: all 0.3s;
+}
+
+.flex-end {
+    justify-content: flex-end;
+}
+
+.flex-start {
+    justify-content: flex-start;
+}
+
+.menu:hover {
+    background: #175dc7;
+    cursor: pointer;
+    color: white;
+}
+
+.menu div {
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding: 0 5px;
+}

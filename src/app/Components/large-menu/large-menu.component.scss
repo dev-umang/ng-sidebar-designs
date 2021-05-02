@@ -1,0 +1,27 @@
+.menu-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.menu {
+    margin: 1rem 3rem;
+}
+
+.submenu-item {
+    padding: 5px;
+    display: flex;
+    font-size: 0.8rem;
+    transition: 0.3s;
+    color: #5b646d;
+}
+
+.submenu-item:hover {
+    cursor: pointer;
+    background: #175dc7;
+    color: white;
+}
+
+.submenu-item div {
+    padding: 0 10px;
+}

@@ -1,0 +1,22 @@
+<div
+  class="backdrop"
+  (click)="sidebarService.toggleSidebar('top-left')"
+  *ngIf="sidebarService.isTopLeft"
+  [@AnimFading]
+></div>
+<div
+  class="sidebar top-left-sidebar"
+  *ngIf="sidebarService.isTopLeft"
+  [@AnimTopLeft]
+>
+  <div class="close-btn">
+    <button (click)="sidebarService.toggleSidebar('top-left')">
+      <i class="fa fa-times"></i>
+    </button>
+  </div>
+  <div class="sidebar-title border-bottom pb-3">
+    <span><i class="fa fa-circle" style="color: #175dc7"></i></span>
+    <span>Top Left Sidebar</span>
+  </div>
+  <app-single-menu> </app-single-menu>
+</div>

@@ -1,0 +1,37 @@
+<div class="box">
+    <div class="row m-0 p-0" style="flex-grow: 1;">
+        <div class="col-3 m-0 p-0">
+            <button (click)="sidebarService.toggleSidebar('top-left')">Top Left</button>
+        </div>
+        <div class="col-6 m-0 p-0">
+            <button (click)="sidebarService.toggleSidebar('top')">Top</button>
+        </div>
+        <div class="col-3 m-0 p-0">
+            <button (click)="sidebarService.toggleSidebar('top-right')">Top Right</button>
+        </div>
+    </div>
+
+    <div class="row center-row m-0 p-0" style="flex-grow: 2;">
+        <div class="col-3 m-0 p-0">
+            <button (click)="sidebarService.toggleSidebar('left')">Left</button>
+        </div>
+        <div class="col-6 m-0 p-0">
+            <button (click)="sidebarService.toggleSidebar('fullpage')">Full Page</button>
+        </div>
+        <div class="col-3 m-0 p-0">
+            <button (click)="sidebarService.toggleSidebar('right')">Right</button>
+        </div>
+    </div>
+
+    <div class="row m-0 p-0" style="flex-grow: 2;">
+        <div class="col-3 m-0 p-0">
+            <button (click)="sidebarService.toggleSidebar('bottom-left')">Bottom Left</button>
+        </div>
+        <div class="col-6 m-0 p-0">
+            <button (click)="sidebarService.toggleSidebar('bottom')">Bottom</button>
+        </div>
+        <div class="col-3 m-0 p-0">
+            <button (click)="sidebarService.toggleSidebar('bottom-right')">Bottom Right</button>
+        </div>
+    </div>
+</div>

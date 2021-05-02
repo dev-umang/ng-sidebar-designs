@@ -1,0 +1,12 @@
+<div class="backdrop" (click)="sidebarService.toggleSidebar('fullpage')" *ngIf="sidebarService.isFullpage" [@AnimFading]></div>
+<div class="sidebar full-sidebar" *ngIf="sidebarService.isFullpage" [@AnimZoom]>
+    <div class="close-btn">
+        <button (click)="sidebarService.toggleSidebar('fullpage')"><i class="fa fa-times"></i></button>
+    </div>
+    <div class="sidebar-title border-bottom pb-3">
+        <span><i class="fa fa-circle" style="color: #175dc7;"></i></span>
+        <span>Full Page Sidebar</span>
+    </div>
+    <app-large-menu></app-large-menu>
+    <app-large-menu></app-large-menu>
+</div>

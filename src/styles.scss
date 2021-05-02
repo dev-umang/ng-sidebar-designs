@@ -1,0 +1,67 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+/* Importing Bootstrap SCSS file. */
+
+@import url('https://fonts.googleapis.com/css2?family=Catamaran&family=Fredoka+One&family=Limelight&family=Permanent+Marker&family=Play&display=swap');
+@import '~bootstrap/scss/bootstrap';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, rgba(78, 12, 12, 0.288), rgba(25, 17, 66, 0.336));
+}
+
+.sidebar {
+    background: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    // padding: 1rem;
+}
+
+.sidebar-title {
+    padding: 10px;
+    display: flex;
+    span {
+        font-family: 'Permanent Marker';
+        padding: 0 10px;
+        color: rgb(47, 38, 54);
+    }
+}
+
+button {
+    transition: all 0.3s;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.close-btn button {
+    border: none;
+    background: transparent;
+    padding: 5px 10px;
+}
+
+.close-btn button:hover {
+    background: rgb(250, 173, 173);
+}
+
+.sidebar-footer {
+    margin-top: auto;
+    font-size: 0.85rem;
+    font-weight: 600;
+    padding: 10px;
+}

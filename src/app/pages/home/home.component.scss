@@ -1,0 +1,14 @@
+section {
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+    // background: linear-gradient(45deg, #464646, #858585);
+    background: linear-gradient(45deg, #e6bfc0, #d9ffd9, #ffe5b9);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(44, 43, 43);
+    font-weight: 600;
+    font-size: 1.2rem;
+}

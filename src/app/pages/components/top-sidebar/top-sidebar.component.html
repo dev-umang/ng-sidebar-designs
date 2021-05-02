@@ -1,0 +1,18 @@
+<div
+  class="backdrop"
+  (click)="sidebarService.toggleSidebar('top')"
+  *ngIf="sidebarService.isTop"
+  [@AnimFading]
+></div>
+<div class="sidebar top-sidebar" *ngIf="sidebarService.isTop" [@AnimTop]>
+  <div class="close-btn">
+    <button (click)="sidebarService.toggleSidebar('top')">
+      <i class="fa fa-times"></i>
+    </button>
+  </div>
+  <div class="sidebar-title border-bottom pb-3">
+    <span><i class="fa fa-circle" style="color: #175dc7"></i></span>
+    <span>Top Sidebar</span>
+  </div>
+  <app-large-menu></app-large-menu>
+</div>

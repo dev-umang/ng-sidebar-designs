@@ -1,0 +1,11 @@
+<div class="menu-container">
+    <div [class]="getClassName()" *ngFor="let menu of sidebarService.singleMenu">
+        <div>
+            <i class="{{menu.icon}}"></i>
+        </div>
+        <div>
+            {{menu.title}}
+        </div>
+    </div>
+
+</div>
